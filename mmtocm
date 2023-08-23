@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>M to mm Length Converter</title>
+<body>
+
+<c><h2>M TO MM</h2></c>
+
+
+<p>
+  <label>M</label>
+  <input id="inputm" type="number" placeholder="m" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Milli <span id="outputMillimeters"></span></p>
+
+<script>
+
+function LengthConverter(valNum) {
+  document.getElementById("outputMillimeters").innerHTML=valNum*1000;
+}
+</script>
+</body>
+</html>
