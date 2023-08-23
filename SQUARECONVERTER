@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="with=divide-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<p id="input">Enter First Number: <input id="one">
+<br/><br/>
+
+<p><button onclick="fun()">Square</button></p>
+<p id="res" style="display:none;">
+Squared Result = <input id="squared"><br/><br/>
+
+
+<script>
+var numOne, res, temp;
+function fun()
+{
+  numOne = parseInt(document.getElementById("one").value);
+  
+  if(numOne > 0)
+  {
+    temp = document.getElementById("res");
+    temp.style.display = "block";
+    res = numOne**2;
+    document.getElementById("squared").value = res;
+ 
+    
+  }
+}
+</script>
+
+</body>
+</html>
